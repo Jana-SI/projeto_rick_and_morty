@@ -28,7 +28,7 @@
               </span>
             </div>
 
-            <SaibaMais :action-url="personagemAtual.url" class="mt-auto"/>
+            <SaibaMais :id="personagemAtual.id" class="mt-auto"/>
           </Card>
         </div>
 
