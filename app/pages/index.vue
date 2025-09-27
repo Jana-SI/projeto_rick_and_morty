@@ -1,8 +1,11 @@
 <template>
-    <div class="flex flex-col gap-16">
-        <ListaPersonagens />
-        <ListaEpisodios />
-    </div>
+  <div class="flex flex-col gap-16">
+    <HomeHeroHeader />
+    <PageContainer>
+      <ListaPersonagens />
+      <ListaEpisodios />
+    </PageContainer>
+  </div>
 </template>
 
 <script lang="ts" setup>
