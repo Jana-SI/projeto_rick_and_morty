@@ -11,13 +11,13 @@
 
             <div class="grid grid-cols-[1fr,48px] ">
               <div class="flex flex-col gap-4">
-                <p class="text-base font-bold">{{ personagemAtual.name }}</p>
+                <p class="text-base font-bold">{{ traducaoPersonagens(personagemAtual.name) }}</p>
 
                 <div class="flex flex-col gap-2">
                   <!-- trocar ingles para português -->
-                  <p>{{ personagemAtual.status === 'Alive' ? 'Vivo' : 'Morto' }}</p>
-                  <p>{{ personagemAtual.species }}</p>
-                  <p>{{ personagemAtual.origin.name }}</p>
+                  <p>{{ traducaoPersonagens(personagemAtual.status) }}</p>
+                  <p>{{ traducaoPersonagens(personagemAtual.species) }}</p>
+                  <p>{{ traducaoPersonagens(personagemAtual.origin.name) }}</p>
                 </div>
 
               </div>

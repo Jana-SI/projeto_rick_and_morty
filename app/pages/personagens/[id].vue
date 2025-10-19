@@ -8,9 +8,9 @@
                 <p>Participou de {{ data.episode.length }} episódios</p>
 
                 <div class="flex gap-6">
-                    <p>{{ data.status === 'Alive' ? 'Vivo' : 'Morto' }}</p>
-                    <p>{{ data.species }}</p>
-                    <p>{{ data.gender }}</p>
+                    <p>{{ traducaoPersonagens(data.status) }}</p>
+                    <p>{{ traducaoPersonagens(data.species) }}</p>
+                    <p>{{ traducaoPersonagens(data.gender) }}</p>
                 </div>
             </div>
         </div>

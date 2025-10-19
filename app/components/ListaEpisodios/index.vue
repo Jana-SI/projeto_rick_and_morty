@@ -6,7 +6,7 @@
             <Card v-for="episodioAtual in data.results" class="flex flex-col gap-2 justify-between min-h-[150px] max-w-[250px]">
                 <div class="flex gap-2 items-center">
                     <IconsPlay class="flex-[0_0_24px]"/>
-                    <p> {{ episodioAtual.name }} | {{ episodioAtual.episode }}</p>
+                    <p> {{ traducaoEpisodios(episodioAtual.name) }} | {{ episodioAtual.episode }}</p>
                 </div>
                 <div class="flex items-center justify-between">
                     <SaibaMais class="my-auto"/>
