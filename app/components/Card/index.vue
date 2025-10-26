@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#313234] rounded-lg flex gap-4 flex-col p-4 w-full max-w-[294px]">
+    <div class="card">
 
         <slot></slot>
 
@@ -9,3 +9,16 @@
 <script setup>
 
 </script>
+
+<style>
+.card {
+background-color: #313234; /* bg-[#313234] */
+  border-radius: 0.5rem;      /* rounded-lg */
+  display: flex;              /* flex */
+  flex-direction: column;     /* flex-col */
+  gap: 1rem;                  /* gap-4 */
+  padding: 1rem;              /* p-4 */
+  width: 100%;                /* w-full */
+  max-width: 294px;   
+}
+</style>

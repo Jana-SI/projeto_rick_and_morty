@@ -1,8 +1,8 @@
 <template>
-  <header class="flex gap-4">
-    <h2 class="font-bold text-2xl">{{ title }}</h2>
+  <header class="header">
+    <h2 class="title">{{ title }}</h2>
 
-    <button class="flex gap-2 p-1 pr-2 bg-[#313234] rounded-[32px]">
+    <button class="btn">
       <IconsSquaresFour />
       Ver todos
     </button>
@@ -14,3 +14,23 @@ const props = defineProps({
   title: String
 });
 </script>
+
+<style scoped>
+.header {
+  display: flex;
+  gap: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #313234;
+  border-radius: 32px;
+}
+</style>

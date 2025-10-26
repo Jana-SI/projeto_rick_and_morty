@@ -1,0 +1,13 @@
+.saibaMais {
+  align-self: flex-end;
+  background-color: #11B0C8;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 0.25rem;
+  padding-right: 0.5rem;
+  border-radius: 32px;
+  font-size: 0.875rem;
+  align-items: center;
+}

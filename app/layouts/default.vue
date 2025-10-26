@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#1E1E1E]">
+  <div class="layoutCor">
     
       <slot></slot>
 
@@ -7,3 +7,9 @@
 
   </div>
 </template>
+
+<style>
+.layoutCor{
+  background-color: #1E1E1E;
+}
+</style>

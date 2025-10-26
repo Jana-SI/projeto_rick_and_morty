@@ -1,5 +1,5 @@
 <template>
-    <button class="flex gap-2 items-center">
+    <button class="botao-voltar-ao-topo">
         <p>Voltar ao topo</p>
         <IconsCircleArrowUp />
     </button>
@@ -8,3 +8,11 @@
 <script setup>
 
 </script>
+
+<style>
+.botao-voltar-ao-topo {
+    display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+</style>

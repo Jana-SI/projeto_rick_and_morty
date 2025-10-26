@@ -1,0 +1,25 @@
+.containerPage{
+    display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.containerId{
+	display: flex;
+	gap: 4rem;
+}
+
+.infomacaoPersonagem{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.infomacaoPersonagem h1{
+	font-size: 3rem;
+}
+
+.infomacaoPersonagem div{
+	display: flex;
+	gap: 1.5rem;
+}

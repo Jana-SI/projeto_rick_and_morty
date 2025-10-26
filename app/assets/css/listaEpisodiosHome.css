@@ -1,0 +1,55 @@
+.episodios-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* equivalente a gap-8 */
+    align-items: center;
+}
+
+@media (min-width: 1280px) { /* xl: */
+    .episodios-section {
+        align-items: flex-start;
+    }
+}
+
+.episodios-grid {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) { /* lg: */
+    .episodios-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* gap-2 */
+    justify-content: space-between;
+    min-height: 150px; /* min-h-[150px] */
+    max-width: 250px;  /* max-w-[250px] */
+}
+
+.card-top {
+    display: flex;
+    gap: 0.5rem; /* gap-2 */
+    align-items: center;
+}
+
+.icons-play {
+    flex: 0 0 24px; /* flex-[0_0_24px] */
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.saibamais {
+    margin: auto 0; /* my-auto */
+}

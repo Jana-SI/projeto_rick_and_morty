@@ -1,13 +1,13 @@
 <template>
     <PageContainer>
-        <div class="flex gap-16">
+        <div class="containerId">
             <img :src="data.image" width="369" height="461" class="rounded-2xl" />
 
-            <div class="flex flex-col gap-12">
-                <h1 class="text-5xl">{{ data.name }}</h1>
+            <div class="infomacaoPersonagem">
+                <h1>{{ data.name }}</h1>
                 <p>Participou de {{ data.episode.length }} episódios</p>
 
-                <div class="flex gap-6">
+                <div>
                     <p>{{ traducaoPersonagens(data.status) }}</p>
                     <p>{{ traducaoPersonagens(data.species) }}</p>
                     <p>{{ traducaoPersonagens(data.gender) }}</p>
