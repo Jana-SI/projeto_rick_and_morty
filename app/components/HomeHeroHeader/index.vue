@@ -1,57 +1,125 @@
 <template>
-    <header class="cabecalho-home">
-        <PageContainer class="cabecalho-home-container">
-            <img src="/images/Rick_and_Morty_LogoA.png" width="220" height="64"/>
-            <div class="cabecalho-home-content">
-                <div class="cabecalho-home-text">
-                    <h1 class="">Saiba tudo em um só <span>lugar.</span></h1>
-                    <p>Personagens, localizações, episódio e muito mais.</p>
+    <header class="cabecalho-home container-fluid">
+        <PageContainer class="cabecalho-home-container container">
 
-                    <p>Ai sim, Porr#@%&*</p>
+            <div class="row align-items-center mb-4">
+                <div class="col-auto">
+                    <img src="/images/Rick_and_Morty_LogoA.png" class="img-fluid" width="220" height="64"/>
                 </div>
 
-                <img src="/images/Rick-Sanchez-Banner.png" alt="rick-sanchez-banner">
+                <div class="col text-end">
+                    <button class="btn-favoritos"><IconsHeartOutlined width=24 height=24 fill="white"></IconsHeartOutlined>Lista de Favoritos</button>
+                </div>
+            </div>
+            
+            <div class="row cabecalho-home-content align-items-center">
+                <div class="col-md-5 cabecalho-home-text">
+                    <h1 class="">Saiba tudo em um só <span>lugar.</span></h1>
+                    <p class="mb-5">Personagens, localizações, episódio e muito mais.</p>
+
+                    <div class="d-flex gap-2 mt-5">
+                        <button class="btn-theme-switch btn-escuro"><IconsMoon></IconsMoon>Escuro</button>
+                        <button class="btn-theme-switch btn-claro"><IconsSun></IconsSun>Claro</button>
+                    </div>
+
+                    <p class="mt-4 frase">Ai sim, Porr#@%&*</p>
+                </div>
+                
+                <div class="col-md-7">
+                    <img src="/images/Rick-Sanchez-Banner.png" class="img-fluid" alt="rick-sanchez-banner">
+                </div>
             </div>
         </PageContainer>
     </header>
 </template>
 
 <style scoped>
+
 .cabecalho-home {
-    background-color: black;
-    padding-top: 4rem; /* Assuming pt-16 corresponds to 4rem */
+  background-color: #000;
+  color: #fff;
+  padding-top: 4rem;
 }
 
-.cabecalho-home .cabecalho-home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem; /* Assuming gap-5 corresponds to 1.25rem */
+.cabecalho-home-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.cabecalho-home-content{
-    display: flex;
-    gap: 16px; /* Assuming gap-16 corresponds to 16px */
+.cabecalho-home-text span {
+  color: #11B0C8;
 }
 
-.cabecalho-home-text{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Assuming gap-6 corresponds to 1.5rem */
-    height: fit-content;
-    align-self: center;
+.frase {
+  color: #11B0C8;
 }
 
-.cabecalho-home-text h1{
-    font-weight: bold;
-    font-size: 3rem; /* Equivalent to text-5xl in Tailwind */
+.cabecalho-home img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
-.cabecalho-home-text span{
-    color: #11B0c8;
+.btn-theme-switch {
+  /* Configuração base para o botão */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Espaçamento entre ícone e texto */
+  padding: 0.5rem 1.5rem; 
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  
+  /* Formato de pílula (muito arredondado) */
+  border-radius: 9999px;
+  color: #fff !important; /* Texto branco em ambos os botões */
 }
 
-.cabecalho-home-text :nth-child(3){
-    color: #11B0c8;
-    margin-top: 2.5rem; /* Equivalent to mt-10 in Tailwind */
+.btn-escuro {
+  /* Cor de fundo do botão Escuro (Teal/Cyan) */
+  background-color: #11B0C8;
+}
+
+.btn-escuro:hover {
+  background-color: #0c8297; /* Efeito hover sutil */
+}
+
+.btn-claro {
+  /* Cor de fundo do botão Claro (Cinza escuro, contrastando com o preto do header) */
+  background-color: #495057;
+}
+
+.btn-claro:hover {
+  background-color: #343a40; /* Efeito hover sutil */
+}
+
+.btn-favoritos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  border-radius: 9999px; /* Formato de pílula */
+  background-color: #11B0C8; /* Cor de fundo turquesa */
+  color: #fff; /* Texto branco */
+}
+
+.btn-favoritos:hover {
+  background-color: #0c8297; /* Efeito hover sutil */
 }
 </style>
