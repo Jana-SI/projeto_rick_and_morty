@@ -11,8 +11,18 @@
         <i class="bi bi-arrow-right-circle"></i>
       </button>
 
-      <Swiper :modules="modules" :slides-per-view="4" :space-between="20" :grabCursor="true" class="personagens-swiper"
-        :navigation="{ prevEl: prevEl, nextEl: nextEl }" :breakpoints="{
+      <Swiper 
+        :modules="modules"
+        :slides-per-view="4"
+        :space-between="20" 
+        :grabCursor="true"
+        class="personagens-swiper"
+        :navigation="{ prevEl: prevEl, nextEl: nextEl }" 
+        :loop="true"
+        :autoplay="autoplayConfig"
+        @reachEnd="inverterDirecao"
+        @reachBeginning="inverterDirecao"
+        :breakpoints="{
           320: { slidesPerView: 1 },
           576: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
@@ -60,4 +70,15 @@ const modules = $swiper?.modules;
 // refs que serão conectadas na navegação
 const prevEl = ref(null);
 const nextEl = ref(null);
+
+const autoplayConfig = ref({
+  delay: 2500,
+  disableOnInteraction: false,
+  reverseDirection: false
+});
+
+function inverterDirecao() {
+  autoplayConfig.value.reverseDirection =
+    !autoplayConfig.value.reverseDirection;
+}
 </script>

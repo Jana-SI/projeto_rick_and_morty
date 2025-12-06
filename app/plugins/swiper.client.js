@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 // estilos globais
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay"; // opcional mas recomendado
 
 export default defineNuxtPlugin(() => {
   return {
@@ -11,7 +12,7 @@ export default defineNuxtPlugin(() => {
       swiper: {
         Swiper,
         SwiperSlide,
-        modules: [Navigation],
+        modules: [Navigation, Autoplay],
       },
     },
   };
