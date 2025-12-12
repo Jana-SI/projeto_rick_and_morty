@@ -1,46 +1,41 @@
+footer feito
+
 <template>
     <footer>
         <PageContainer class="footer">
-            <div class="img-btn-voltar-topo">
-                <img src="/images/Rick_and_Morty_LogoA.png" alt="Rick_and_Morty_LogoA.png" />
-                <VoltarAoTopo />
-            </div>
-            <div class="desenvolvido-por">
-                <p>&copy; {{ new Date().getFullYear() }}</p>
-                <span>
-                    <p>
-                        <IconsCode></IconsCode>
-                        Desenvolvido por <span>Jana-SI</span>
-                    </p>
-                </span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8"><img src="/images/Rick_and_Morty_LogoA.png" alt="Rick_and_Morty_LogoA.png" />
+                    </div>
+                    <div class="col-4">
+                        <VoltarAoTopo class="float-end" />
+                    </div>
+                </div>
+                <div class="row desenvolvido-por">
+                    <div class="col-4">
+                        <p>&copy; {{ new Date().getFullYear() }}</p>
+                    </div>
+                    <div class="col-8">
+                        <p class="float-end">
+                            <IconsCode></IconsCode>
+                            Desenvolvido por <span>Jana-SI</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </PageContainer>
     </footer>
 </template>
 
 <style>
-.footer {
-    display: flex;
-    flex-direction: column;
+.footer{
+    margin-top: 16px;
 }
 
-.footer .img-btn-voltar-topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.footer .desenvolvido-por {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 0;
-    border-top-width: 2px;
-}
-
-.footer .desenvolvido-por span {
-    display: flex;
-    align-items: center;
+.desenvolvido-por{
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 3px solid #11B0c8;
 }
 
 .desenvolvido-por p>span {
