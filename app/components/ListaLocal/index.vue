@@ -1,6 +1,6 @@
 <template>
     <section class="localizacao-section">
-        <Header title="Localização" />
+        <Header title="Localizações" />
 
         <div class="carrossel-container">
 

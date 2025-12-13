@@ -5,50 +5,58 @@
 ![API](https://img.shields.io/badge/API-Rick%20and%20Morty-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-> Saiba tudo sobre o universo de Rick and Morty em um só lugar!  
-> Projeto desenvolvido durante o **Curso COMPLETO e Gratuito de Nuxt.js** ([Playlist YouTube](https://www.youtube.com/playlist?list=PL_m43UlJFjF5wecIJOybo82vEUlEioP9W)).
+> Projeto desenvolvido durante o **Curso COMPLETO e Gratuito de Nuxt.js**  
+> ([Playlist no YouTube](https://www.youtube.com/playlist?list=PL_m43UlJFjF5wecIJOybo82vEUlEioP9W)).
 
 ---
 
 ## 🖼️ Prévia do Projeto  
 
-### 🏠 Página Inicial  
-![Página Inicial](./app/assets/preview-home.png)
+### Página Inicial  
+![Página Inicial](./app/assets/home.png)
 
-### 👤 Detalhes do Personagem  
-![Detalhes do Personagem](./app/assets/preview-personagem.png)
-
-> *(As imagens acima mostram como deverá ficar o projeto final — cards de personagens, episódios e página individual de personagem.)*
+### Detalhes do Personagem  
+![Detalhes do Personagem](./app/assets/personagem.png)
 
 ---
 
 ## 🚀 Sobre o Projeto  
 
-Este projeto foi construído utilizando **Nuxt 4** e consome dados diretamente da **API pública do Rick and Morty** ([rickandmortyapi.com](https://rickandmortyapi.com/api/)).  
-A proposta é criar uma **enciclopédia interativa**, com informações sobre **personagens, episódios e localizações**, tudo organizado de forma intuitiva e visualmente agradável.
+Este projeto foi desenvolvido com o objetivo de **estudar e praticar Nuxt 4**, acompanhando o **Curso COMPLETO e Gratuito de Nuxt.js**  
+([Playlist no YouTube](https://www.youtube.com/playlist?list=PL_m43UlJFjF5wecIJOybo82vEUlEioP9W)).
 
-Atualmente, o projeto conta com:  
-✅ Página principal com cabeçalho, listas de personagens e episódios  
-✅ Cards de personagens com status e botão “Saiba mais”  
-✅ Página individual para cada personagem (imagem + informações básicas)  
-✅ Rodapé com créditos e link do desenvolvedor  
+A aplicação consome dados diretamente da **API pública do Rick and Morty**  
+([rickandmortyapi.com](https://rickandmortyapi.com/api/)) e simula uma **wiki interativa** do universo da série.
+
+A **página inicial (Home)** é composta por seções reutilizáveis, incluindo **três carrosséis** com destaques de **personagens, episódios e localizações**, organizados de forma visual e intuitiva.  
+Atualmente, o projeto também conta com uma **página dedicada aos personagens**, exibindo detalhes individuais e navegação entre eles.
+
+### Funcionalidades atuais  
+
+- ✅ Página inicial com múltiplos carrosséis (personagens, episódios e localizações)  
+- ✅ Cards de personagens com status e botão **“Saiba mais”**  
+- ✅ Página individual de personagem (imagem, informações básicas e carrossel de personagens)  
+- ✅ Componentização reutilizável (cards, carrosséis, header e footer)  
+- ✅ Rodapé com créditos e link do desenvolvedor  
 
 🧩 *Design inspirado no [Figma oficial](https://www.figma.com/design/Wb6rkMX6HWesHhie85NnEm/Rick-and-Morty--Community-?node-id=0-1&p=f&t=q8MCq0lOFJ6uOf08-0)*  
 
 ---
 
-## 🧠 O que ainda está por vir  
+## 🧠 Desafios para Evolução do Projeto  
 
-O curso teve seu último vídeo publicado em **setembro**, então o projeto ainda está em desenvolvimento.  
-Essas são as próximas etapas planejadas:  
+Este repositório também pode ser utilizado como **base de estudo** para quem deseja praticar Nuxt 4.  
+Algumas ideias de desafios para evoluir o projeto:
 
-- 🌍 Criar páginas detalhadas de **localizações**  
-- 📺 Página completa de **episódios**  
-- 💬 Traduzir automaticamente informações da API (de inglês para português)  
-- 🎨 Migrar **Tailwind** para **CSS puro e Bootstrap** (facilitando manutenção)  
-- 🖤 Implementar **sistema de favoritos** (com ícones dinâmicos)  
-- 🌗 Adicionar **modo claro/escuro**  
-- ⚙️ Melhorar responsividade e ajustar pequenos detalhes de CSS  
+- 🔹 Criar uma **página dedicada para episódios**  
+- 🔹 Criar uma **página dedicada para localizações**  
+- 🔹 Implementar um sistema de **favoritos**, conforme o layout proposto no Figma  
+- 🔹 Persistir favoritos utilizando **localStorage** ou **Pinia**  
+- 🔹 Adicionar filtros e busca por nome/status 
+-    Criar um **tema claro (Light Mode)** com alternância entre claro/escuro 
+- 🔹 Melhorar acessibilidade e responsividade  
+
+Esses desafios ajudam a aprofundar conceitos como **roteamento, estado global, composição de componentes e consumo de APIs** no Nuxt.
 
 ---
 
@@ -56,9 +64,9 @@ Essas são as próximas etapas planejadas:
 
 - **Nuxt 4**  
 - **Vue.js 3**  
-- **Bootstrap 5** (em andamento)  
+- **Bootstrap 5**  
 - **Rick and Morty API**  
-- **Figma** (para prototipagem)  
+- **Figma**  
 
 ---
 
@@ -71,11 +79,11 @@ Clone o repositório e instale as dependências:
 npm install
 
 # ou pnpm / yarn / bun
-pnpm install
+npm install
 yarn install
 bun install
 
-# npm
+# executar em modo desenvolvimento
 npm run dev
 ```
 ---

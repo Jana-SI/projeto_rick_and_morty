@@ -72,7 +72,7 @@
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  cursor: pointer;
+  cursor: none;
   user-select: none;
   border: none;
   transition: all 0.2s ease-in-out;
@@ -110,7 +110,7 @@
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  cursor: pointer;
+  cursor: none;
   user-select: none;
   border: none;
   transition: all 0.2s ease-in-out;

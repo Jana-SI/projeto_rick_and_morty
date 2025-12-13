@@ -7,7 +7,7 @@ export const dicionarioLocalizacao = {
     "Earth (Replacement Dimension)": "Terra (Dimensão Substituta)",
     "Testicle Monster Dimension": "Dimensão do Monstro Testicular",
     "Worldender's lair": "Covil do Destruidor de Mundos",
-    "Interdimensional Cable": "Cabo Interdimensional",
+    "Interdimensional Cable": "TV a Cabo Interdimensional",
     "Planet" : "Planeta",
     "Cluster" : "Aglomerado",
     "Space station" : "Estação Espacial",

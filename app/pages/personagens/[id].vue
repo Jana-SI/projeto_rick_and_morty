@@ -9,7 +9,7 @@
                 <div class="col text-end">
                     <button class="btn-favoritos">
                         <IconsHeartOutlined width=24 height=24 fill="white"></IconsHeartOutlined>
-                        <a href="/">Voltar á home</a>
+                        <a href="/">Home</a>
                     </button>
                 </div>
             </div>
@@ -31,9 +31,9 @@
                     </p>
 
                     <div class="d-flex justify-content-evenly">
-                        <p>⚡ {{ traducaoPersonagens(data.status) }}</p>
-                        <p>👤 {{ traducaoPersonagens(data.species) }}</p>
-                        <p>📍 {{ traducaoPersonagens(data.gender) }}</p>
+                        <p><IconsPulse :width="24" :height="24" ></IconsPulse> {{ traducaoPersonagens(data.status) }}</p>
+                        <p><IconsAlien :width="24" :height="24" ></IconsAlien> {{ traducaoPersonagens(data.species) }}</p>
+                        <p><IconsGender :width="24" :height="24" ></IconsGender> {{ traducaoPersonagens(data.gender) }}</p>
                     </div>
                 </div>
                 <div class="col-4 align-self-end d-flex flex-row gap-4">
@@ -63,7 +63,7 @@
                             <IconsHeartFilled width="32" height="32" />
                         </div>
                     </Card>
-                </div>sa :
+                </div>
             </div>
             <div class="row maisPersonagens">
                 <div class="col-12">

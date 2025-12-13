@@ -35,9 +35,9 @@
               <div class="card-details">
                 <p  class="personagem-nome">{{ traducaoPersonagens(personagemAtual.name) }}</p>
                 <div class="personagem-info">
-                  <p>⚡ {{ traducaoPersonagens(personagemAtual.status) }}</p>
-                  <p>👤 {{ traducaoPersonagens(personagemAtual.species) }}</p>
-                  <p>📍 {{ traducaoPersonagens(personagemAtual.origin.name) }}</p>
+                  <p><IconsPulse :width="16" :height="16" ></IconsPulse> {{ traducaoPersonagens(personagemAtual.status) }}</p>
+                  <p><IconsAlien  :width="16" :height="16" ></IconsAlien> {{ traducaoPersonagens(personagemAtual.species) }}</p>
+                  <p><IconsGender  :width="16" :height="16" ></IconsGender> {{ traducaoPersonagens(personagemAtual.origin.name) }}</p>
                 </div>
               </div>
               <span class="favorite-icon">
