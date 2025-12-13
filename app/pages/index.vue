@@ -4,6 +4,7 @@
     <PageContainer>
       <ListaPersonagens />
       <ListaEpisodios />
+      <ListaLocal />
     </PageContainer>
   </div>
 </template>

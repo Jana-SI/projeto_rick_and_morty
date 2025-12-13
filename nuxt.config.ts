@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
     'bootstrap-icons/font/bootstrap-icons.css',
-    '@/assets/css/containerPage.css', 
     '@/assets/css/saibaMais.css',
     '@/assets/css/listaPersonagens.css',
     '@/assets/css/listaEpisodiosHome.css',
     '@/assets/css/personagem.css',
+    '@/assets/css/listaLocal.css'
   ]
 })
