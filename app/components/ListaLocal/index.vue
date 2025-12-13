@@ -65,11 +65,11 @@ const modules = $swiper?.modules;
 const prevEl = ref(null);
 const nextEl = ref(null);
 
-/* const autoplayConfig = ref({
-    delay: 3000,
+const autoplayConfig = ref({
+    delay: 2000,
     disableOnInteraction: false,
     reverseDirection: false
-}); */
+});
 
 function inverterDirecao() {
     autoplayConfig.value.reverseDirection =
