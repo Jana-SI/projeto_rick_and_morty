@@ -34,22 +34,22 @@
   overflow: visible;
 }
 
-/* parte superior do card */
 .card-top {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+  flex: 1;               /* faz o topo ocupar todo o espaço possível */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa botão e coração */
+  margin-top: auto;               /* joga o bloco para baixo */
 }
 
 .icons-play {
     flex: 0 0 24px;
-}
-
-/* parte inferior do card */
-.card-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .saibamais {
@@ -89,4 +89,18 @@
 @media (max-width: 576px) {
   .carrossel-container { padding: 0 40px; }
   .nav-btn { width: 36px; height: 36px; }
+}
+
+adicionar este codigo no css de lista de episodios
+
+.episodios-swiper .swiper-slide {
+  display: flex !important;       /* faz cada slide virar um flex container */
+  height: auto !important;        /* deixa o slide crescer */
+}
+
+.episodios-swiper .swiper-slide > .card {
+  flex: 1;
+  height: 100%;                   /* card ocupa toda altura disponível */
+  display: flex;
+  flex-direction: column;
 }

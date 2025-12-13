@@ -1,5 +1,5 @@
 <template>
-  <header class="header container py-3">
+  <header class="header">
 
     <!-- SEARCH E FILTROS (opcional) -->
     <div v-if="showTools" class="d-flex flex-wrap gap-3 align-items-center mt-3">
@@ -47,6 +47,7 @@ const filtro = ref("personagens");
 <style scoped>
 .header {
   background: transparent;
+  margin: 16px;
 }
 
 /* ===== TÍTULO ===== */
