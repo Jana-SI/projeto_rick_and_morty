@@ -25,8 +25,9 @@
                 <SwiperSlide v-for="episodioAtual in data.results" :key="episodioAtual.id">
                     <Card>
                         <div class="card-top">
-                            <IconsPlay class="icons-play" />
                             <p>
+                                <IconsPlay class="icons-play" />
+                            
                                 {{ traducaoEpisodios(episodioAtual.name) }}
                                 | {{ episodioAtual.episode }}
                             </p>

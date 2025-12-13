@@ -91,8 +91,6 @@
   .nav-btn { width: 36px; height: 36px; }
 }
 
-adicionar este codigo no css de lista de episodios
-
 .episodios-swiper .swiper-slide {
   display: flex !important;       /* faz cada slide virar um flex container */
   height: auto !important;        /* deixa o slide crescer */

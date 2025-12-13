@@ -2,9 +2,7 @@
 	margin-top: 20px;
 	padding-top: 16px;
 	border-top: 3px solid #11B0c8;
-	font-weight: 700;
-  	font-size: 1.5rem;
-  	color: #fff;
+
 }
 
 .card-local {
@@ -54,4 +52,33 @@
 
 .maisPersonagens p {
 	padding-left: 16px;
+}
+
+.btn-favoritos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  border-radius: 9999px; /* Formato de pílula */
+  background-color: #11B0C8; /* Cor de fundo turquesa */
+  color: #fff; /* Texto branco */
+  text-decoration: none;
+}
+
+.btn-favoritos:hover {
+  background-color: #0c8297; /* Efeito hover sutil */
+}
+
+.btn-favoritos a{
+	text-decoration: none;
+	color: white;
 }

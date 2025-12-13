@@ -8,7 +8,7 @@
 
                 <div class="col text-end">
                     <button class="btn-favoritos">
-                        <IconsHeartOutlined width=24 height=24 fill="white"></IconsHeartOutlined> 
+                        <IconsHeartOutlined width=24 height=24 fill="white"></IconsHeartOutlined>
                         <a href="/">Voltar á home</a>
                     </button>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="col-3">
                     <img :src="data.image" width="369" height="461" class="img-fluid rounded" />
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <div class="d-flex justify-content-between">
                         <h1>{{ data.name }}</h1>
                         <span>
@@ -30,13 +30,13 @@
                         <IconsPlay></IconsPlay> Participou de {{ data.episode.length }} episódios
                     </p>
 
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-evenly">
                         <p>⚡ {{ traducaoPersonagens(data.status) }}</p>
                         <p>👤 {{ traducaoPersonagens(data.species) }}</p>
                         <p>📍 {{ traducaoPersonagens(data.gender) }}</p>
                     </div>
                 </div>
-                <div class="col-5 align-self-end d-flex flex-row gap-4">
+                <div class="col-4 align-self-end d-flex flex-row gap-4">
                     <Card class="card-local">
 
                         <div class="icon-wrapper">
@@ -45,12 +45,9 @@
 
                         <p class="local-title">{{ data.origin.name }}</p>
 
-                        <div class="saiba-mais">
-                            <SaibaMais></SaibaMais>
-                        </div>
-
-                        <div class="favorito-warpper">
-                            <IconsHeartFilled width=32 height=32></IconsHeartFilled>
+                        <div class="mt-auto d-flex flex-column align-items-center gap-2">
+                            <SaibaMais class="saibamais"/>
+                            <IconsHeartFilled width="32" height="32" />
                         </div>
 
                     </Card>
@@ -61,15 +58,12 @@
 
                         <p class="local-title">{{ data.location.name }}</p>
 
-                        <div class="saiba-mais">
-                            <SaibaMais></SaibaMais>
-                        </div>
-
-                        <div class="favorito-warpper">
-                            <IconsHeartFilled width=20 height=20></IconsHeartFilled>
+                        <div class="mt-auto d-flex flex-column align-items-center gap-2">
+                            <SaibaMais class="saibamais"/>
+                            <IconsHeartFilled width="32" height="32" />
                         </div>
                     </Card>
-                </div>
+                </div>sa :
             </div>
             <div class="row maisPersonagens">
                 <div class="col-12">

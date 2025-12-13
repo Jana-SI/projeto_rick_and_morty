@@ -1,6 +1,6 @@
 <template>
   <section class="lista-personagens">
-    <Header title="Personagens" :showTools="true" />
+    <Header v-if="showHeader" title="Personagens" :showTools="true" />
 
     <div class="carrossel-container">
       <!-- Botões fora do Swiper -->
@@ -81,4 +81,8 @@ function inverterDirecao() {
   autoplayConfig.value.reverseDirection =
     !autoplayConfig.value.reverseDirection;
 }
+
+const props = defineProps({
+  showHeader: { type: Boolean, default: true }
+});
 </script>

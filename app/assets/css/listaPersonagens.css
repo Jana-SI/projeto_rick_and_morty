@@ -87,19 +87,6 @@
   margin-bottom: 0;
 }
 
-.botao-saiba-mais {
-  background-color: #00c8ff;
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-
 /* container do carrossel: permite elementos externos e dá espaço lateral */
 .carrossel-container {
   position: relative;
@@ -144,4 +131,16 @@
 @media (max-width: 576px) {
   .carrossel-container { padding: 0 40px; }
   .nav-btn { width: 36px; height: 36px; }
+}
+
+.personagens-swiper .swiper-slide {
+  display: flex !important;       /* faz cada slide virar um flex container */
+  height: auto !important;        /* deixa o slide crescer */
+}
+
+.personagens-swiper .swiper-slide > .card {
+  flex: 1;
+  height: 100%;                   /* card ocupa toda altura disponível */
+  display: flex;
+  flex-direction: column;
 }
