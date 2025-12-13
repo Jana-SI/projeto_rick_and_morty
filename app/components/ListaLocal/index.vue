@@ -30,9 +30,9 @@
                             <IconsPlanet width=48 height=48 fill="white"></IconsPlanet>
                         </div>
                         <p>
-                            {{ localAtual.type }}
+                            {{ traducaoLocalizacao(localAtual.type) }}
                             <br />
-                            <span>{{ localAtual.name }}</span>
+                            <span>{{ traducaoLocalizacao(localAtual.name) }}</span>
                         </p>
 
                         <div class="mt-auto d-flex flex-column align-items-center">

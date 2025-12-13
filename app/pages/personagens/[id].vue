@@ -43,7 +43,7 @@
                             <IconsPlanet width=32 height=32 fill="white"></IconsPlanet>
                         </div>
 
-                        <p class="local-title">{{ data.origin.name }}</p>
+                        <p class="local-title">{{ traducaoLocalizacao(data.origin.name) }}</p>
 
                         <div class="mt-auto d-flex flex-column align-items-center gap-2">
                             <SaibaMais class="saibamais"/>
@@ -56,7 +56,7 @@
                             <IconsLocation width=32 height=32 fill="white"></IconsLocation>
                         </div>
 
-                        <p class="local-title">{{ data.location.name }}</p>
+                        <p class="local-title">{{ traducaoLocalizacao(data.location.name) }}</p>
 
                         <div class="mt-auto d-flex flex-column align-items-center gap-2">
                             <SaibaMais class="saibamais"/>
