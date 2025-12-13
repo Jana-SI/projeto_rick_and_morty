@@ -1,0 +1,57 @@
+.maisPersonagens{
+	margin-top: 20px;
+	padding-top: 16px;
+	border-top: 3px solid #11B0c8;
+	font-weight: 700;
+  	font-size: 1.5rem;
+  	color: #fff;
+}
+
+.card-local {
+    background: #2c2c2c;
+    width: 220px;
+    padding: 22px 14px;
+    border-radius: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+	
+    position: relative;
+	overflow: visible;
+
+	padding-top: 40px;
+}
+
+.card-local .icon-wrapper {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+
+	background: transparent;
+	padding: 12px;
+	border-radius: 50%;
+
+}
+
+.card-local .local-title {
+    font-size: 18px;
+    color: #e5e5e5;
+    font-weight: 500;
+    margin: 0;
+}
+
+.favorito-wrapper {
+    margin-top: 4px;
+}
+
+.card-local svg {
+    display: block;
+}
+
+.maisPersonagens p {
+	padding-left: 16px;
+}

@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@/assets/css/containerPage.css', 
     '@/assets/css/saibaMais.css',
     '@/assets/css/listaPersonagens.css',
-    '@/assets/css/listaEpisodiosHome.css'
+    '@/assets/css/listaEpisodiosHome.css',
+    '@/assets/css/personagem.css',
   ]
 })
