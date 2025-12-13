@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-5">
                     <div class="d-flex justify-content-between">
-                        <h1>{{ data.name }}</h1>
+                        <h1>{{ traducaoPersonagens(data.name) }}</h1>
                         <span>
                             <IconsHeartFilled width=32 height=32 fill="#11B0c8" v-if="data.status === 'Alive'" />
                             <IconsHeartOutlined width=32 height=32 fill="#11B0c8" v-else />
