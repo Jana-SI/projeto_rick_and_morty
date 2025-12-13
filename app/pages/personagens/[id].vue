@@ -8,7 +8,7 @@
 
                 <div class="col text-end">
                     <button class="btn-favoritos">
-                        <IconsHeartOutlined width=24 height=24 fill="white"></IconsHeartOutlined>
+                        <IconsHome width=22 height=22 fill="white" />
                         <a href="/">Home</a>
                     </button>
                 </div>
